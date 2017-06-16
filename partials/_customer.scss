@@ -1,0 +1,109 @@
+// customer and video section
+
+.customer-and-video-section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// customer section
+
+.customer-section {
+	background-image: url(images/customer_bkgrd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 7%;
+	padding-bottom: 8%; 
+	padding-right: 115px;
+	padding-left: 115px;
+	width: 50%;
+}
+
+
+	/* Portrait tablet and small desktops */
+		@media (max-width: 940px) {
+		div.customer-section {
+			width: 100%;
+			padding-top: 10%;
+			padding-bottom: 10%; 
+			padding-right: 50px;
+			padding-left: 50px;
+
+		}
+	}
+
+
+.customer-section img.image--quotes {
+	padding: $typeB 0;
+	margin: 0 auto;
+}
+
+.customer-section p.customerID {
+	padding: 25px 0;
+	margin: 0 auto;
+}
+
+.customer-section__circleCarousel {
+	padding-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.circleCarousel {
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: $colorMed;
+	margin-right: 15px;
+}
+
+.circleCarousel:last-child {
+	margin-right: 0;
+}
+
+.circleCarousel--current {
+	height: 60px;
+	width: 60px;
+	border: 3px solid #cbcdd9;
+}
+
+// video section
+
+.video-section {
+	background-image: url(images/video_background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50%;
+	text-align: center;
+	position: relative;
+
+}
+
+	/* Portrait tablet and small desktops */
+		@media (max-width: 940px) {
+		.video-section {
+			width: 100%;
+			padding: 25%;
+		}
+	}
+
+.video-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: rgba(26, 26, 38, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+	/* Landscape phone to portrait tablet */
+	// make plant store img dissapear so only play button displays
+	@media (max-width: 768px) {
+		.video__Graphic {
+			display: none;
+		}
+	}

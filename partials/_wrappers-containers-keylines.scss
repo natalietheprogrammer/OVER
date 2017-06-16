@@ -1,0 +1,144 @@
+// wrappers
+
+.wrapper--big {
+	width: 100%;
+	// background-color: red;
+	font-family: 'Poppins', sans-serif;
+}
+
+.wrapper--sm {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 $typeB;
+}
+
+.wrapper--sm__2 {
+	max-width: 1230px;
+	margin: 0 auto;
+	padding: 0 $typeB;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.container--typeA {
+	padding: $typeA 0;
+}
+
+.container--typeB {
+	padding: $typeB 0;
+}
+
+.container--typeC {
+	padding: $typeC 0;
+}
+
+.container--typeD {
+	padding: $typeD 0;
+}
+
+.container--typeE {
+	padding: $typeE 0;
+}
+
+.container--typeF {
+	padding: $typeF 0;
+}
+
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+		.container--typeA {
+			padding: $typeB 0;
+		}
+
+		.container--typeB {
+			padding: $typeC 0;
+		}
+
+		.container--typeC {
+			padding: $typeD 0;
+		}
+
+		.container--typeD {
+			padding: $typeE 0;
+		}
+
+		.container--typeE {
+			padding: $typeF 0;
+		}
+
+		.container--typeF {
+			padding: $typeF 0;
+		}
+	}
+
+
+// keyline
+
+h2.multi-color__keyline {
+	position: relative;
+}
+
+h2.multi-color__keyline:after {
+	position: absolute;
+	display: block;
+	content: "";
+	background-image: url(images/keyline-tricolor.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 120px;
+	height: 2px;
+	right: 50%;
+	bottom: 25px;
+	transform: translateX(50%);
+}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+		h2.multi-color__keyline:after {
+			bottom: 14px;
+		}
+	}
+
+h3.keyline--sm {
+	position: relative;
+}
+
+h3.keyline--sm:after {
+	position: absolute;
+	display: block;
+	content: "";
+	background-color: #a8edea;
+	width: 40px;
+	height: 2px;
+	bottom: -12px;
+}
+
+// filter button keyline not active until label is checked
+label.filter__button--keyline {
+	position: relative;
+
+}
+
+label.filter__button--keyline:after {
+	position: absolute;
+	display: none;
+	content: "";
+	background-color: $colorDarkMain;
+	width: 100%;
+	height: 1px;
+	bottom: 11px;
+}
+
+label.filter__button--keyline:hover:after {
+	background-color: $colorMed;
+}
+
+	/* Landscape phone to portrait tablet */
+	// take off hover effect
+	@media (max-width: 768px) {
+		label.filter__button--keyline:hover:after {
+			background-color: $colorDarkMain;
+		}
+	}

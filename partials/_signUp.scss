@@ -1,0 +1,56 @@
+// sign-Up section
+
+form.email-and-icon {
+	position: relative;
+	padding: 0 160px; 
+	margin-top: 45px;
+	margin-bottom: 45px;
+
+}
+
+.email-and-icon input {
+	border: none;
+	border-bottom: 1px solid #e6e5e1;
+	width: 100%;
+	height: 50px;
+	display: block;
+}
+
+.email-and-icon input:hover {
+	border: 2px solid $colorMed;
+} 
+
+.email-and-icon img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 160px;
+}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+		.sign-up--blurb {
+			padding-top: 15px;
+		}
+
+		form.email-and-icon {
+			padding: 0 8%;
+			margin-top: 30px;
+			margin-bottom: 30px;	 	
+		}	
+		
+		.email-and-icon img {
+			right: 8%;
+		}
+	}
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		form.email-and-icon {
+			padding: 0 4%;
+		}	
+		
+		.email-and-icon img {
+			right: 4%;
+		}
+	}

@@ -1,0 +1,40 @@
+// logos section
+
+.logo-section ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.logo-section {
+	margin-bottom: $typeA;
+}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+		section.logo-section {
+			padding-top: 30px;
+			padding-bottom: 10px;
+		}
+
+		.logo-section ul {
+			justify-content: space-around;
+		}
+	
+		li.logo__cell {
+			width: 33.3%;
+		}
+	}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		section.logo-section {
+			padding-top: 20px;
+			padding-bottom: 10px;
+		}
+
+		li.logo__cell {
+			width: 45%;
+		}
+	}

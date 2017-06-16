@@ -1,0 +1,318 @@
+
+// fonts
+
+@mixin fontStyling($colorValue, $font-sizeValue, $font-weightValue, $text-transformValue, $text-alignValue) {
+	color: $colorValue;
+	font-size: $font-sizeValue;
+	font-weight: $font-weightValue;
+	text-transform: $text-transformValue;
+	text-align: $text-alignValue;
+}
+
+// general fonts
+
+h1 {
+	@include fontStyling($colorMed, 32px, 400, none, center)
+}
+
+h2 {
+	@include fontStyling($colorDarkMain, 36px, 500, capitalize, center)
+}
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		h2  {
+			font-size: 25px;
+			line-height: 1.5;
+		}
+	}
+
+h3 {
+	@include fontStyling($colorDarkMain, 24px, 400, capitalize, left)
+}
+
+h4 {
+	@include fontStyling($colorDarkMain, 18px, 400, capitalize, left)
+	line-height: 28px;
+}
+
+h4 span {
+	text-transform: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	@include fontStyling($colorMed, 14px, 400, none, center)
+	line-height: 24px
+}
+
+
+// nav bar special fonts
+
+.nav__link a {
+	@include fontStyling($colorDarkMain, 14px, 400, uppercase, left)
+	&:hover {
+		color: $colorMed;
+	}
+}
+
+.nav__menuIcon--counter {
+	@include fontStyling($colorDarkMain, 11px, 400, normal, center)
+}
+
+// nav pop-up special fonts
+
+.nav--popUp__link a {
+	@include fontStyling($colorDarkMain, 20px, 400, uppercase, left)
+	&:hover {
+		color: $colorMed;
+	}
+}
+
+	/* Landscape phone to portrait tablet */
+		@media (max-width: 768px) {
+			.nav--popUp__link a {
+				@include fontStyling($colorDarkMain, 20px, 400, uppercase, left)
+				&:hover {
+					color: $colorDarkMain;
+				}
+			}
+		}
+
+
+.nav--popUp-close {
+	@include fontStyling($colorDarkMain, 24px, 400, uppercase, center)
+	&:hover {
+		color: $colorMed;
+	}
+}	
+	
+	/* Landscape phone to portrait tablet */
+		@media (max-width: 768px) {
+		.nav--popUp-close:hover {
+				color: $colorDarkMain;
+			}
+		}
+
+// hero img special fonts
+
+.heroImg__section h2 {
+	@include fontStyling($colorDarkHeader, 60px, 500, capitalize, center)
+}
+
+.heroImg__button {
+	@include fontStyling($colorLightest, 16px, 400, uppercase, center)
+}
+
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 25px;
+		}
+		.heroImg__section h2 {
+			font-size: 45px;
+			line-height: 1.2;
+		}
+	}
+
+
+	/* iphone 5 special (smallest phone) */
+	@media (max-width: 320px) {
+		.heroImg__section h2 {
+			font-size: 35px;
+			line-height: 1;
+		}
+	}
+
+
+
+// about section special fonts
+
+.text--blue {
+	@include fontStyling(#a8edea, 18px, 400, none, center)
+}
+
+.about-section h2 {
+	@include fontStyling($colorDarkAbout, 36px, 500, capitalize, center)
+}
+
+.about-section__gallery p {
+	@include fontStyling($colorMed, 16px, 400, none, center)
+}
+
+span.designer {
+	@include fontStyling($colorDarkMain, 16px, 500, uppercase, center)
+}
+
+span.designer--type {
+	@include fontStyling($colorMed, 16px, 400, capitalize, center)
+	font-style: italic;
+}
+
+
+	/* Landscape phone to portrait tablet */
+		@media (max-width: 768px) {
+			.about-section__button h3 {
+				font-size: 15px;
+			}
+			.about-section__button p {
+				font-size: 10px;
+			}
+			
+	}
+
+
+// products section special fonts
+
+.filter__button {
+	@include fontStyling($colorDarkMain, 18px, 400, capitalize, center)
+}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		.filter__button {
+			font-size: 14px;
+		}
+	}
+
+button.buyNow {
+	@include fontStyling($colorMed, 12px, 400, uppercase, center)
+}
+
+button.buyNow--touchscreen--button {
+	@include fontStyling($colorLight, 12px, 400, uppercase, center)
+}
+
+.flag {
+	@include fontStyling($colorLight, 10px, 400, uppercase, center)
+
+}
+
+.itemDescriptor {
+	@include fontStyling($colorDarkMain, 14px, 400, none, center)
+}
+
+.price {
+	@include fontStyling($colorDarkMain, 18px, 400, none, center)
+}
+
+.discount {
+	@include fontStyling($colorMed, 14px, 400, none, center)
+	text-decoration: line-through;
+}
+
+button.products-section__Button--more {
+	@include fontStyling($colorDarkMain, 14px, 500, uppercase, center)
+}
+
+// customer review special fonts
+
+.customer-section p {
+	@include fontStyling($colorDarkMain, 16px, 400, none, center)
+	font-style: italic;
+}
+
+.customer-section p.customerID {
+	@include fontStyling($colorMed, 14px, 500, uppercase, center)
+	font-style: normal;
+}
+
+// blog special fonts
+
+.blog-section__cell p.date {
+	@include fontStyling($colorMed, 14px, 400, none, left)
+	line-height: 1;
+}
+
+.blog-section__cell h4 {
+	line-height: 1;
+}
+
+.readMore__link a {
+	@include fontStyling($colorDarkMain, 14px, 400, capitalize, left)
+	&:hover {
+		color: $colorMed;
+	}
+}
+
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.readMore__link a {
+			&:hover {
+			color: $colorDarkMain;
+			}
+		}
+	}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		.blog-section__cell h4 {
+			font-size: 15px;
+		}
+
+		.blog__text-section p.date, .readMore__link a {
+			font-size: 12px;
+		}
+	}
+
+
+
+// newsletter special fonts
+
+.email-and-icon {
+	@include fontStyling($colorMed, 14px, 400, none, left)
+}
+
+// footer special fonts
+
+footer p {
+	@include fontStyling($colorMed, 14px, 400, none, left)
+}
+
+.contactInfo p {
+	line-height: 2;
+}
+
+.footer__contactDetails--col1 span {
+	color: $colorDarkMain;
+	font-weight: 500;
+}
+
+
+// !!!!!!!!!????!!! need to add hover state to img components, below only applies to font awesome
+
+.footer__socialIcons {
+	@include fontStyling($colorDarkMain, 24px, 400, none, center)
+	&:hover {
+		color: $colorMed;
+	}
+}
+
+.footer__services p, .footer__account p {
+	line-height: 2;
+}
+
+	/* Portrait tablet and small desktops */
+	@media (max-width: 940px) {
+		.footer__services p, .footer__account p {
+			line-height: 1.75;
+		}
+	}
+
+
+.footer__copyright-section span {
+	color: $colorDarkMain;
+}
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.footer__copyright-section p {
+			font-size: 12px;
+		}
+	}
+

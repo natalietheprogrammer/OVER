@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OVER</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://use.fontawesome.com/20d3a6ef4d.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="wrapper--big">
+		<div class="nav--popUp" id="nav--popUp">
+			<div class="nav--popUp-close" id="nav--popUp-close">
+				X
+			</div class="nav--popUp__link-container">
+				<ul>
+					<li class="nav--popUp__link"><a href="#">home</a></li>
+					<li class="nav--popUp__link"><a href="#">about</a></li>
+					<li class="nav--popUp__link"><a href="#">pages</a></li>
+					<li class="nav--popUp__link"><a href="#">shop</a></li>
+					<li class="nav--popUp__link"><a href="#">blog</a></li>
+					<li class="nav--popUp__link"><a href="#">contact</a></li>
+				</ul>
+		</div>
+		<!-- header section -->
+		<header>
+			<div class="wrapper--sm">
+				<nav>
+					<!-- navigation -->
+					<div class="nav__sectionPages">
+						<ul class="nav__sectionPages--links">
+							<li class="nav__link currentNavLink"><a href="#">home</a></li>
+							<li class="nav__link"><a href="#">about</a></li>
+							<li class="nav__link"><a href="#">pages</a></li>
+							<li class="nav__link"><a href="#">shop</a></li>
+							<li class="nav__link"><a href="#">blog</a></li>
+						</ul>
+					</div>
+					<!-- menu icons -->
+					<div class="nav__menuIcons">
+						<ul class="nav__menuIcons--links nav__menuIcons--with-counter">
+							<li class="nav__menuIcon icon">
+								<i class="fa fa-shopping-bag" aria-hidden="true"></i>
+								<div class="nav__menuIcon--counter">2</div>
+							</li>
+							<li class="nav__menuIcon icon">
+								<img src="images/icon-magnifying-glass.png" aria-hidden="true">
+							</li>
+							<li class="nav__menuIcon icon" id="burger-bar">
+								<img src="images/icon-menu-options.png" id="menu-button" aria-hidden="true">
+							</li>
+						</ul>
+					</div> <!-- end of menu icons -->
+				</nav>
+			</div> <!-- end of wrapper--sm -->
+			<!-- hero image, title blocks, carousel -->
+			<div class="heroImg__section"> <!-- hero img set to background for this div -->
+				<div class="hero-overlay carousel-cell">
+					<!-- title block & carousel -->
+					<h1>Over collections 2017</h1>
+					<ul class="heroImg__titleBlock-and-carousel">
+						<li class="heroImg__titleBlock-and-carousel--left"><img src="images/icon-left-arrow.png" aria-hidden="true"></li>
+						<li class="heroImg__titleBlock-and-carousel--text"><h2>Living & styling with plants</h2></li>
+						<li class="heroImg__titleBlock-and-carousel--right"><img src="images/icon-right-arrow.png" aria-hidden="true"></li>
+					</ul>
+					<!-- shop now button -->
+					<button class="heroImg__button">shop now</button>
+					<!-- identifies which img is currently showing -->
+					<div class="currentImgIdentifier">
+						<div class="identifier"></div>
+						<div class="identifier identifier--current"></div>
+						<div class="identifier"></div>
+						<div class="identifier"></div>
+					</div>
+				</div>
+
+
+			</div> <!-- end of heroImg__section -->
+		</header>
+		<!-- about section -->
+		<main class="about-section">
+			<div class="wrapper--sm">
+				<!-- title block, bckground img, about article, credits -->
+				<div class="titleBlock container--typeA">
+					<!-- titles -->
+					<div class="titles container--typeB">
+						<p class="text--blue">welcome to</p>
+						<h2 class="container--typeC">The home of interior plants</h2>
+					</div>	
+					<!-- article -->
+					<article class="container--typeB">
+						<p>We are passionate about exotic indoor plants, we know them and always endeavor to precondition them so that you do not have many problems so often associated with indoor plants, after all we have a stock of thousands of plants and we have to know how to care for them.</p>
+					</article>
+					<!-- credits -->
+					<div class="credits container--typeC">
+						<p class="container--typeF"><span class="designer">Jame Brace.</span> <span class="designer--type">Web Design</span></p>
+					</div>
+				</div> 
+				<!-- gallery -->
+				<div class="about-section__gallery container--typeB">
+						<!-- large section -->
+						<div class="about-section__cell about-section--lg">
+							<button class="about-section__button">
+								<div>
+									<H3>Air plants</H3>
+									<p>12 items</p>
+								</div>
+							</button>
+							<img src="images/pink_cact.jpg" alt="">
+						</div>
+						<!-- composite section -->
+						<div class="about-section--composite">
+							<!-- cell 1 -->
+							<div class="about-section__cell about-section__cell--sm1">
+								<button class="about-section__button">
+									<div>
+										<H3>Office plants</H3>
+										<p>38 items</p>
+									</div>
+								</button>
+								<img src="images/plant_01.jpg" alt="">
+							</div>
+							<!-- cell 2 -->
+							<div class="about-section__cell about-section__cell--sm2">
+								<button class="about-section__button">
+									<div>
+										<H3>House plants</H3>
+										<p>21 items</p>
+									</div>
+								</button>
+								<img src="images/plant_02.jpg" alt="">
+							</div>
+							<!-- cell 3 -->
+							<div class="about-section__cell about-section__cell--wide">
+								<button class="about-section__button">
+									<div>
+										<H3>Plant containers</H3>
+										<p>07 items</p>
+									</div>
+									</button>
+								<img src="images/plant_03.jpg" alt="">
+							</div>
+						</div> <!-- end of composite section -->
+				</div> <!-- end of about-section__gallery -->
+			</div> <!-- end of wrapper--sm -->
+		</main> <!-- end of about-section -->
+		<!-- products section -->
+		<section class="products-section">
+			<div class="wrapper--sm wrapper--sm__2">
+				<!-- title-->
+				
+					<h2 class="container--typeA multi-color__keyline">Popular products</h2>
+				
+				<!-- filter buttons -->
+				<input type="checkbox" id="new-Arrivals" class="hidden">
+				<label class="filter__button filter__button--keyline new-Arrivals container--typeC" for="new-Arrivals">New arrivals</label>
+
+				<input type="checkbox" id="best-Seller" class="hidden">
+				<label class="filter__button filter__button--keyline best-Seller container--typeC" for="best-Seller">Best Seller</label>
+
+				<input type="checkbox" id="features" class="hidden">
+				<label class="filter__button filter__button--keyline features container--typeC" for="features">Features</label>
+				<!-- gallery -->
+				<div class="products-section__gallery container--typeB">
+					<ul>
+						<!-- cell #1 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_01.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- features flags -->
+							<div class="flags-section">
+								<p class="flag flag--best-Seller">Hot</p>
+								<p class="flag flag--new-Arrivals">New</p>
+							</div>
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Pebbled backpack</p>
+								<p class="price container--typeC">$99.00</p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #2 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_02.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- features flags -->
+							<div class="flags-section">
+								<p class="flag flag--new-Arrivals">New</p>
+							</div>
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Flower print dress</p>
+								<p class="price container--typeC">$52.00</p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #3 -->
+						<li class="products-section__cell">
+							<!-- image section-->
+							<div class="image-section">
+								<img src="images/products_03.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- features flags -->
+							<div class="flags-section">
+								<p class="flag flag--features">-20%</p>
+							</div>
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Printed cotton T-shirt</p>
+								<p class="price container--typeC">$56.00 <span class="discount">$79.00</span></p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #4 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_04.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- no features flags -->
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Slim-fit cotton T-shirt</p>
+								<p class="price container--typeC">$77.00</p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #5 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_05.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- features flags -->
+							<div class="flags-section">
+									<p class="flag flag--features">-20%</p>
+							</div>
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Zip leather jacket</p>
+								<p class="price container--typeC">$178.00 <span class="discount">$199.00</span></p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #6 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_06.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- no features flags -->
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Flower print dress</p>
+								<p class="price container--typeC">$98.00</p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #7 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_07.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- feautres flags -->
+							<div class="flags-section">
+								<p class="flag flag--best-Seller">Hot</p>
+							</div>
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Combined weekend bag</p>
+								<p class="price container--typeC">$88.00</p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #8 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_08.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- features flags -->
+							<div class="flags-section">
+								<p class="flag flag--features">-20%</p>
+							</div>
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Tortoiseshell retro sunglasses</p>
+								<p class="price container--typeC">$56.00 <span class="discount">$79.00</span></p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #9 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_09.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- no features flags -->
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Slim-fit Patrick jeans</p>
+								<p class="price container--typeC">$88.00</p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+						<!-- cell #10 -->
+						<li class="products-section__cell">
+							<!-- image section -->
+							<div class="image-section">
+								<img src="images/products_10.jpg" alt="">
+								<!-- overlay -->
+								<div class="overlay">
+									<button class="buyNow">add to cart</button>
+								</div>
+							</div>
+							<!-- no features flags -->
+							<!-- footer -->
+							<div class="products-section-gallery__footer">
+								<p class="itemDescriptor">Embroidered message cap</p>
+								<p class="price container--typeC">$178.00 <span class="discount">$199.00</span></p>
+								<div class="buyNow--touchscreen">
+									<button class="buyNow--touchscreen--button">add to cart</button>
+								</div>
+							</div>
+						</li>
+					</ul>					
+				</div> <!-- end of gallery -->
+			<!-- 	Hidden "More" button
+			activated on smaller screens to view hidden gallery cells (gallery cells removed as screen shrinks to reduce duration of scrolling down) -->
+			<button class="hidden products-section__Button--more">More</button>
+
+			</div> <!-- end of wrapper--sm -->
+		</section> <!-- end of products section -->
+		<!-- customer review section -->
+		<section class="customer-and-video-section container--typeA">
+			<!-- customer review -->
+			<div class="customer-section">
+				<h2>What are our customers saying?</h2>
+				<img class="image--quotes" src="images/quote_icon.png" aria-hidden="true">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut fugit corrupti voluptatum eligendi. Consequuntur pariatur reprehenderit, saepe aspernatur maiores iste libero, quis rem.</p>
+				<p class="customerID">Rosinante Brook . Web design</p>
+				<div class="customer-section__circleCarousel">
+					<div class="circleCarousel"></div>
+					<div class="circleCarousel circleCarousel--current"></div>
+					<div class="circleCarousel"></div>
+					<div class="circleCarousel"></div>
+				</div>
+			</div> <!-- end of customer review -->
+			<!-- video -->
+			<div class="video-section">
+				<!-- <img src="images/video_background.jpg" alt=""> -->
+				<div class="video-overlay">
+					<img src="images/play_icon.png" alt="">
+					<img src="images/video_graphic.png" class="video__Graphic" alt="">
+				</div>
+			</div>
+		</section> <!-- end of customer/video section -->
+		<!-- blog section -->
+		<section class="blog-section">
+			<div class="wrapper--sm">
+				<!-- title -->
+				<h2 class="titleBlock container--typeA multi-color__keyline">From our blog</h2>
+				<!-- gallery -->
+				<ul class="blog-section__gallery container--typeB">
+					<li class="blog-section__cell">
+						<div class="blog__image-section">
+							<img src="images/blog_01.jpg" alt="">
+							<div class="blog__overlay"></div>
+						</div>
+						<div class="blog__text-section">
+							<p class="date">December 14, 2017</p>
+							<h4>How to wear fishnets like <span>a</span> street style superstar</h4>
+							<div class="readMore__link"><a href="#">Read more</a></div>
+						</div>
+					</li>
+					<li class="blog-section__cell">
+						<div class="blog__image-section">
+							<img src="images/blog_02.jpg" alt="">
+							<div class="blog__overlay"></div>
+						</div>
+						<div class="blog__text-section">
+							<p class="date">December 14, 2017</p>
+							<h4>How to wear fishnets like <span>a</span> street style superstar</h4>
+							<div class="readMore__link"><a href="#">Read more</a></div>
+						</div>
+					</li>
+					<li class="blog-section__cell">
+						<div class="blog__image-section">
+							<img src="images/blog_03.jpg" alt="">
+							<div class="blog__overlay"></div>
+						</div>
+						<div class="blog__text-section">
+							<p class="date">December 14, 2017</p>
+							<h4>How to wear fishnets like <span>a</span> street style superstar</h4>
+							<div class="readMore__link"><a href="#">Read more</a></div>
+						</div>
+					</li>
+				</ul>
+			</div> <!-- end of wrapper--sm -->
+		</section> <!-- end of blog-section -->
+		<!-- sign-up section -->
+		<section class="signUp-section">
+			<div class="wrapper--sm">
+				<!-- title -->
+				<h2 class="titleBlock container--typeA multi-color__keyline">Sign up for our newsletter</h2>
+				<p class="sign-up--blurb container--typeE">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, harum, minima. Beatae laudantium odit dicta aliquam explicabo veniam a, harum eum, voluptas debitis rem cumque iure. Ut excepturi debitis recusandae?</p>
+				<!-- email input -->
+				<form class="email-and-icon container--typeA">
+					<input type="email" name="email" placeholder="Enter your email">
+					<img src="images/icon-envelope.png" aria-hidden="true">
+				</form>
+			</div> <!-- end of wrapper--sm -->
+		</section>
+		<!-- logo section -->
+		<section class="logo-section container--typeA">
+			<div class="wrapper--sm">
+				<ul>
+					<li class="logo__cell"><img src="images/brand_01.png" alt="Authentic Athletics Department National Wear logo"></li>
+					<li class="logo__cell"><img src="images/brand_02.png" alt="Authentics Department Drewville Maddison Los Angeles California logo"></li>
+					<li class="logo__cell"><img src="images/brand_03.png" alt="Southside Sears New York Genuine 02 Division logo"></li>
+					<li class="logo__cell"><img src="images/brand_04.png" alt="Northrn Yourkshire Baked Goods Culinary logo"></li>
+					<li class="logo__cell"><img src="images/brand_05.png" alt="Luigiano Restaurants Established in 2008 logo"></li>
+				</ul>
+			</div>	<!-- end of wrapper--sm -->
+		</section> <!-- end of logo section -->
+		<hr>
+		<!-- footer -->
+		<footer>
+			<div class="wrapper--sm">
+				<!-- All footer except copyright section (contains: contact, services, your account, instagram) -->
+				<div class="footer__details--composite container--typeA"> 
+					<!-- logo & contact details (column 1) -->
+					<section class="footer__contactDetails--col1">
+						<div class="logo container--typeA">  
+							<img src="images/logo.png">
+						</div>
+						<p class="footer__business-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum nisi placeat labore dignissimos aut fuga culpa suscipit recusandae, assumenda mollitia eum officia omnis nihil nam, quos sequi dolores, excepturi exercitationem!</p>
+						<div class="contactInfo">
+							<p><span>Address : </span>450 fifth Avenue, 36 New York,<br>NY 1011829</p>
+							<p><span>Phone : </span>+(1200) 445 441 221</p>
+							<p><span>Email : </span>creativewithjoy@gmail.com</p>
+							<p><span>Skype : </span>doodlelys</p>
+						</div>
+						<ul class="footer__socialIcons--section">
+							<li class="footer__socialIcons"><i class="fa fa-facebook" aria-hidden="true"></i></li>
+							<li class="footer__socialIcons"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+							<li class="footer__socialIcons"><img src="images/icon-google-plus-symbol.png" aria-hidden="true"></li>
+							<li class="footer__socialIcons"><img src="images/icon-instagram.png" aria-hidden="true"></li>
+							<li class="footer__socialIcons"><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+						</ul>
+					</section> <!-- end of column 1 -->
+					<!-- footer services (column 2) -->
+					
+					<div class="footer__col2and3"><section class="footer__services">
+						<div class="container--typeA">
+							<h3 class="keyline--sm">Services</h3>
+						</div>
+						<div>
+							<p>International shipping</p>
+							<p>Term & conditions</p>
+							<p>Orders and returns</p>
+							<p>Shipping rates & policies</p>
+							<p>FAQs</p>
+							<p>Contact</p>
+						</div>
+					</section> <!-- end of column 2 -->
+					<!-- footer account (column 3) -->
+					<section class="footer__account">
+						<div class="container--typeA">
+							<h3 class="keyline--sm">Your account</h3>
+						</div>
+						<div>
+							<p>Your order</p>
+							<p>Your wishlist</p>
+							<p>Payment method</p>
+							<p>Newsletter</p>
+							<p>About us</p>
+							<p>Privacy policy</p>
+						</div>
+					</section> <!-- end of column 3 -->
+					</div>
+					<!-- footer instagram (column 4) -->
+					<section class="footer__instagram">
+						<div class="container--typeA">
+							<h3 class="keyline--sm">Instagram</h3>
+						</div>
+						<!-- instagram gallery -->
+						<ul class="instagram__gallery">
+							<li class="instagram__cell"><img src="images/instagram-01-succulent-blueContainer.jpg" alt="Small succulent in a light blue container"></li>
+							<li class="instagram__cell"><img src="images/instagram-02-succulent-whiteContainer.jpg" alt="Small succulent in a white container"></li>
+							<li class="instagram__cell"><img src="images/instagram-03-appleBlossom.jpg" alt="Two twigs with pink and white apple blossoms each sitting in a white vase on a slab of wood. The arrangement is on a white table with a robin's egg blue chair peeking out from behind the table."></li>
+							<li class="instagram__cell break2"><img src="images/instagram-04-singleLeaf.jpg" alt="A single large tropical leaf sitting an a clear glass vase with water."></li>
+							<li class="instagram__cell break2"><img src="images/instagram-05-succulent-offcentered.jpg" alt="Close-up image of small succulent in a white container."></li>
+							<li class="instagram__cell break2"><img src="images/instagram-06-plant-with-pictureFrame (1).jpg" alt="A potted plant in a white container sits on a white ceramic shelf along with a picture. The picture is of modern art, it has a black frame with a human figure in black and white surrounded by shapes colored: beige, robin's egg blue, and black."></li>
+						</ul> <!-- end of instagram gallery -->
+						<!-- payment options gallery -->
+						<ul class="paymentOptions__gallery">
+							<li class="paymentOptions__cell"><img src="images/creditCard-Amex.jpg" alt="Payment option: AMEX card"></li>
+							<li class="paymentOptions__cell"><img src="images/creditCard-discover.jpg" alt="Payment option: Discover card"></li>
+							<li class="paymentOptions__cell"><img src="images/creditCard-visa.jpg" alt="Payment option: VISA card"></li>
+							<li class="paymentOptions__cell"><img src="images/creditCard-MC.jpg" alt="Payment option: Master Card"></li>
+							<li class="paymentOptions__cell"><img src="images/creditCard-flat.jpg" alt="Payment option: Flat Card"></li>
+						</ul><!-- end of payment option gallery -->
+					</section> <!-- end of column 4 -->
+				</div> <!-- end of footer details section -->
+				<!-- copyright section -->
+			</div> <!-- end of wrapper--sm -->
+			<!-- cross pg line -->
+			<hr>
+			<div class="wrapper--sm">
+				<div class="footer__copyright-section">
+					<div>
+						<p>&copy 2017 OVER . <br class="hidden break2">All rights reserved . <br class="hidden break1">Design by <span>Creativewithjoy</span></p>
+					</div>
+					<div>
+						<p>Any questions? <br class="hidden break2">Let us help you. <br class="hidden break1">Call us: <span>*(1200) 989 169 092</span></p>
+					</div>
+				</div> <!-- end of copyright section -->
+			</div> <!-- end of wrapper--sm -->
+		</footer>
+	</div> <!-- end of wrapper--big -->
+
+	<!-- Scripts -->
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+
+
+
+<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>							
+					
+<div>Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>	
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/lyolya" title="Lyolya">Lyolya</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/lyolya" title="Lyolya">Lyolya</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/lyolya" title="Lyolya">Lyolya</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/anton-saputro" title="Anton Saputro">Anton Saputro</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a> 
+
+<div>Icons made by <a href="http://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor Cresnar</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->

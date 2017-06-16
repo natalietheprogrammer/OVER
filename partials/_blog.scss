@@ -1,0 +1,118 @@
+// blog section
+.blog-section__gallery {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.blog__image-section {
+	position: relative;
+}
+
+.blog__overlay {
+	display: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+}
+
+.blog-section__gallery li:hover {
+	.blog__overlay {
+		display: block;
+	}
+}
+
+.blog-section__gallery li:nth-child(1) {
+	width: calc(33.3% - 20px);
+	margin-right: 15px;
+}
+
+.blog-section__gallery li:nth-child(2) {
+	width: calc(33.3% - 20px);
+	margin-right: 15px;
+	margin-left: 15px;
+}
+
+.blog-section__gallery li:nth-child(3) {
+	width: calc(33.3% - 20px);
+	margin-left: 15px;
+}
+
+.blog-section__cell img {
+	display: block;
+	width: 100%;
+}
+
+p.date {
+	margin: 20px 0;
+}
+
+.blog-section__cell h4 {
+	margin-bottom: 25px;
+}
+
+.readMore__link a {
+	border-bottom: 1px solid $colorDarkMain;
+}
+
+.readMore__link a:hover {
+	border-bottom: 1px solid $colorMed;
+}
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.readMore__link a:hover {
+			border-bottom: 1px solid $colorDarkMain;
+		}
+	}
+
+	/* Portrait tablet and small desktops */
+		@media (max-width: 940px) {
+		.blog-section__gallery {
+			padding-bottom: 50px;
+		}
+	}
+
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.blog-section__gallery {
+			flex-direction: column;
+	
+		}
+
+		.blog-section__gallery li.blog-section__cell {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: 20px;
+		}
+
+		.blog-section__gallery li.blog-section__cell:first-child {
+			margin-top: 25px;
+		}	
+
+		.blog__text-section {
+			margin-left: 20px;
+		}
+
+		p.date {
+			margin: 5% 0;
+		}	
+		
+		.blog-section__cell h4 {
+			margin-bottom: 8%;
+		}
+
+		.blog-section__gallery li:hover {
+			.blog__overlay {
+			display: none;
+		}
+	}
+
+
+	}

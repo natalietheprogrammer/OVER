@@ -1,0 +1,299 @@
+// header nav section
+
+	// entire nav container incl logo
+
+nav {
+	background-image: url(images/logo.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 35px 0;
+	transition: all 0.4s;
+}
+
+	// LHS section pages (home, about etc)
+
+.nav__sectionPages {
+		width: 31.6%;
+}
+
+.nav__sectionPages--links {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+	// RHS menu icons (shopping bag, search, burger bar)
+
+div.nav__menuIcons {
+	position: fixed;
+	top: $typeB;
+	right: $typeB;
+	z-index: 1;
+}
+
+ul.nav__menuIcons--links {
+	display: flex;
+	flex-direction: row;
+}
+
+li.nav__menuIcon {
+	height: 24px;
+	width: 24px;
+}
+
+.currentNavLink a {
+	color: #888890;
+}
+
+li.nav__menuIcon {
+	margin-left: 30px;
+	position: relative;
+}
+
+	@media (max-width: 480px) {
+		li.nav__menuIcon {
+		margin-left: 15px;
+	}
+		}
+
+.nav__menuIcon--counter {
+	background-color: rgb(173, 238, 234);
+	height: 20px;
+	width: 20px;
+	line-height: 2;
+	padding: 0 7px;
+	border-radius: 50%;
+	position: absolute;
+	top: -5px;
+	right: -10px;
+
+}
+
+	/* Landscape phone to portrait tablet */
+		@media (max-width: 768px) {
+		// nav bar margin sizing auto adjusts, this vertically recenters icons,
+		div.nav__menuIcons {
+			top: 25px;
+		}
+		// hide section pages,
+		.nav__sectionPages--links {
+			display: none;
+		}
+		// shift logo to LHS
+		nav {
+			background-position: left;
+		}
+	}
+
+
+	// header hero section
+
+.heroImg__section {
+	background-image: url(images/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 35px;
+	width: 100%;
+	height: calc(100vh - 100px);
+	.hero-overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(255, 241, 238, 0.5);
+		padding: 0 60px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+		/* Landscape phones and down */
+		@media (max-width: 480px) {
+		.hero-overlay {
+			padding: 0 50px;
+		}
+	}
+}
+
+.hero-overlay h1 {
+	padding-top: 10px;
+}
+
+.heroImg__titleBlock-and-carousel {
+	display: flex;
+	flex: row;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.heroImg__titleBlock-and-carousel--left img,
+.heroImg__titleBlock-and-carousel--right img {
+	min-width: 24px;
+}
+
+.heroImg__titleBlock-and-carousel--text {
+	padding: 0 50px;
+}
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		.heroImg__titleBlock-and-carousel--text {
+			padding: 0 25px;
+		}
+
+		.heroImg__titleBlock-and-carousel--left img,
+		.heroImg__titleBlock-and-carousel--right img {
+			padding-bottom: 50px;
+		}
+	}
+
+
+button.heroImg__button {
+	width: 180px;
+	height: 60px;
+	margin-top: 55px;
+	background-color: rgb(240, 127, 132);
+}
+
+
+	/* Landscape phones and down */
+		@media (max-width: 480px) {
+			button.heroImg__button {
+			margin-top: 25px;
+			height: 50px;
+			width: 160px;
+		}
+	}
+
+button.heroImg__button:hover {
+	color: $colorMed;
+}
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		button.heroImg__button:hover {
+			color: $colorLightest;
+}
+	}
+
+.currentImgIdentifier {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: absolute;
+	bottom: 40px;
+}
+
+	/* iphone 5 special (smallest phone) */
+	@media (max-width: 320px) {
+		.currentImgIdentifier {
+			bottom: 30px;
+		}
+	}
+
+.identifier {
+	background-color: rgb(19, 18, 33);
+	height: 12px;
+	width: 12px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+	/* iphone 5 special (smallest phone) */
+	@media (max-width: 320px) {
+		.identifier {
+			height: 7px;
+			width: 7px;
+		}
+	}
+
+.identifier--current {
+	background-color: rgb(137, 137, 145);
+}
+
+.identifier:last-child {
+	margin-right: 0;
+}
+
+// Popup nav
+.nav--popUp {
+	position: fixed;
+	top: 71px;
+	right: 30px;
+	width: 132px;
+	color: $colorDarkMain;
+	z-index: 100;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 1.2s ease;
+}
+
+.nav--popUp__link {
+	padding: 8px 20px;
+	background-color: rgba(255, 255, 255, 0.9);
+	margin: 2px 5px;
+}
+
+.nav--popUp__link:first-child {
+	margin: 15px 5px 2px 5px;
+}
+
+.nav--popUp__link:last-child {
+	border-bottom: none;
+}
+
+.nav--popUp-close { 
+	position: absolute;
+	top: -40px;
+	right: 5px;
+	cursor: pointer;
+}
+
+
+	/* Landscape phone to portrait tablet */
+	@media (max-width: 768px) {
+		.nav--popUp {
+			top: 66px;
+		}
+	}
+
+
+	/* Landscape phones and down */
+	@media (max-width: 480px) {
+		.nav--popUp {
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100vh;
+			background-color: $colorLightest;
+		}
+
+		.nav--popUp__link {
+			padding: 7% 15%;
+			border-bottom: 1px solid rgba(240, 127, 132, 0.5);
+		}
+
+		.nav--popUp__link:last-child {
+			border-bottom: none;
+		}
+
+		.nav--popUp-close { 
+			position: absolute;
+			top: 15px;
+			right: 15px;
+			padding: 5px;
+		}
+	}
