@@ -183,6 +183,7 @@ input#best-Seller:checked ~ div.products-section__gallery {
 		visibility: visible;
 		opacity: 1;
 		transform: scale(1);
+		line-height: 22px;
 	}
 }
 
@@ -192,6 +193,7 @@ input#new-Arrivals:checked ~ div.products-section__gallery {
 		visibility: visible;
 		opacity: 1;
 		transform: scale(1);
+		line-height: 22px;
 	}
 }
 
@@ -201,6 +203,7 @@ input#features:checked ~ div.products-section__gallery {
 		visibility: visible;
 		opacity: 1;
 		transform: scale(1);
+		line-height: 22px;
 	}
 }
 
